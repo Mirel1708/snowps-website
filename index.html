@@ -235,4 +235,40 @@
     <script src="config.js"></script>
     <script src="src/index.js"></script>
 </body>
+<style>
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    pointer-events: none;
+    z-index: 9999;
+    user-select: none;
+    animation: fall linear infinite;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+</style>
+<script>
+  function createSnowflake() {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+    snowflake.textContent = "*"
+    snowflake.style.left = Math.random() * 100 + "vw";
+    snowflake.style.animationDuration = Math.random() * 5 + 8 + "s";
+    snowflake.style.opacity = Math.random() * 0.5 + 0.5;
+    snowflake.style.fontSize = Math.random() * 1.2 + 0.8 + "rem";
+    document.body.appendChild(snowflake);
+
+    setTimeout(() => {
+      snowflake.remove();
+    }, 15000);
+  }
+
+  setInterval(createSnowflake, Math.random() * 150 + 150);
+</script>
 </html>
