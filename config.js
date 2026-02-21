@@ -10,8 +10,8 @@ let option = {
     server_name: "SnowPS",
     server_description: "SnowPS, the best growtopia private server with the best eco and best comunity",
     owner: [
-        "Owner Server #Mirel",
-        "Owner Server#Obby The Main Owner"
+        "Owner Website #Mirel",
+        "Owner Server #Obby"
     ],
     discord_invite_link: "https://discord.gg/snowps",
     ip_address: "15.235.166.218",
