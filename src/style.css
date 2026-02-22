@@ -448,3 +448,68 @@ footer p::before {
         margin: 1em auto;
     }
 }
+/* Container principal /
+.staff-section {
+  padding: 60px 20px 80px;
+  text-align: center;
+  background: linear-gradient(to bottom, #0f0f2a, #000814); / dark gradient ca pe multe GTPS /
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/ Titlu /
+.staff-section h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: underline #ffaa00;
+  text-underline-offset: 10px;
+  color: #ffcc66; / gold/orange accent /
+}
+
+/ Subtitlu */
+.staff-section > p {
+  font-size: 1.4em;
+  margin: 0 0 50px;
+  opacity: 0.85;
+  font-style: italic;
+}
+/* Containerul pentru marquee (scrolling) /
+.staff-marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1600px; / lățime maximă ca să încapă mai multe carduri vizibile /
+}
+/ Track-ul care se mișcă /
+.staff-marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 35px; / spațiu între carduri, ajustează dacă vrei mai strâns /
+  animation: staffScroll 70s linear infinite; / 70s = viteză lentă & smooth, ca pe Mafia; schimbă la 50s pentru mai rapid */
+ /* Responsive pentru mobile/tablet /
+@media (max-width: 1024px) {
+  .staff-item {
+    width: 340px !important;
+    padding: 30px 20px !important;
+  }
+  .staff-marquee {
+    gap: 25px !important;
+    animation-duration: 60s !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-item {
+    width: 300px !important;
+    min-height: 280px !important;
+    padding: 25px 18px !important;
+  }
+  .staff-section h2 {
+    font-size: 2.4em !important;
+  }
+  .staff-marquee {
+    animation-duration: 50s !important; / mai rapid pe mobil ca să nu plictisească */
